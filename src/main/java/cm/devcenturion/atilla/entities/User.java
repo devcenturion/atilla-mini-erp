@@ -25,8 +25,7 @@ public class User implements Serializable{
     @Column(name = "type", insertable = false)
     private String type;
 
-    public User (){
-
+    public User ( ) {
     }
 
     public User (String firstName, String lastName, String userName, String password, String phone, String address) {
@@ -38,28 +37,6 @@ public class User implements Serializable{
         this.address = address;
     }
 
-    public User (long id, String firstName, String lastName,
-                     String userName, String password, String phone, String address) {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.userName = userName;
-        this.password = password;
-        this.phone = phone;
-        this.address = address;
-    }
-
-    public User (long id, String firstName, String lastName,
-                     String userName, String password, String phone, String address, String type) {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.userName = userName;
-        this.password = password;
-        this.phone = phone;
-        this.address = address;
-        this.type = type;
-    }
 
     public long getId() {
         return id;
